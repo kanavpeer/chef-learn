@@ -5,12 +5,11 @@
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
 package 'apache2' do
-
+action:upgrade
 end
 
 service 'apache2' do
- action:enable
- action:start
+action:enable
+action:start
 end
-
 
